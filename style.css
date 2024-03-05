@@ -40,8 +40,7 @@
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+
 } */
 
 body {
@@ -54,13 +53,15 @@ body {
 
 }
 
-.wraper{
+.wrapper{
     background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-} 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: var(--border-radius);
+}
 
 .container {
   
@@ -139,9 +140,15 @@ input {
 :is(textarea, input),
 :is(textarea, input):hover,
 :is(textarea, input):focus {
-
+    
     outline: none;
     font-family: "Inter", sans-serif;
+}
+
+:is(textarea, input):hover,
+:is(textarea, input):focus,
+:is(textarea, input):active  {
+    background-color: #fff;
 }
 img {
     width: 90px;
@@ -149,7 +156,7 @@ img {
     margin-top: 51px;
     margin-bottom: 7px;
 }
-button {
+#btn{
     border-radius: var(--border-radius);
     width: 317px;
     height: 61px;
@@ -158,11 +165,64 @@ button {
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
     font-weight: 700;
+     &:hover {
+        background-color: #28abf18f;
+     }
 }
 
 .endorsements {
-    width: 319px;
+    width: 390px;
     padding: 13px 17px 11px 14px;
-
+    
    
 }
+#list {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+ 
+
+    gap: 13px;
+
+    width: 317px;
+
+
+}
+li {
+    background-color: #FFFFFF;
+    list-style: none;
+    width: 317px;
+    padding: 13px 17px 11px 14px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 16.94px;
+    position: relative;
+ 
+
+}
+span {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    line-height: 16.94px;
+    margin-bottom:20px;
+}
+.like-btn,
+.like-btn:hover {
+    position: absolute;
+    left: 250px;
+    width: auto; /* Adjust the width to auto to fit content */
+    padding: 5px 10px; /* Add padding for better clickability */
+    background-color: #FFFFFF;
+    border: none; /* Remove default button border */
+    cursor: pointer;
+}
+.liked {
+    color: red;
+ 
+}
+  

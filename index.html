@@ -9,27 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>WeAreTheChampions</title>
 </head>
 <body>
-    <div class="wraper">
+    <div class="wrapper">
         <div class="container">
             <img src="freddie.png" alt="">
             <form action="">
                 <p><label for="endorsement">We are the Champions</label></p>
-                <textarea name="endorsement" id="" cols="30" rows="10" placeholder="Write your endorsement here"></textarea>
+                <textarea name="endorsement" id="text" cols="30" rows="10" placeholder="Write your endorsement here" required></textarea>
                 <div class="users">
-                    <input type="text" placeholder="From" >
-                    <input type="text" placeholder="To">
+                    <input type="text" placeholder="From" id="input-from">
+                    <input type="text" placeholder="To" id="input-to">
                 </div>
                 
-                <button type="submit">Publish</button>
+                <button type="submit" id="btn">Publish</button>
             </form>
             <p> - Endorsements - </p>
         </div>
       
         <div class="endorsements">
+            <ul id="list">
+                <!-- <li><span>To mary</span> <br/> <br/>dolor sit amet consectetur adipisicing elit. Tenetur sunt, numquam architecto asperiores nisi suscipit!<br/> <br/><span>from john</span> <span class="like"> <i class="fa-regular fa-heart"> 2</i></span> </li> -->
+
+<!-- 
+                <li>Sed recusandae, doloribus reprehenderit, officia sequi odio non illo perspiciatis debitis fugit delectus cumque aperiam?</li>
+                <li>Ab fuga numquam sequi dolorem magni? Excepturi aspernatur dolorum blanditiis repellat tempore dicta. Dolorum, porro.</li> -->
+
+            </ul>
             
         </div>
     </div>
