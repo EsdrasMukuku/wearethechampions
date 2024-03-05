@@ -7,6 +7,7 @@
 * {
     margin: 0;
     user-select: none;
+    border-style: none;
     
 }
 
@@ -138,7 +139,7 @@ input {
 :is(textarea, input),
 :is(textarea, input):hover,
 :is(textarea, input):focus {
-    border-style: none;
+
     outline: none;
     font-family: "Inter", sans-serif;
 }
@@ -146,6 +147,7 @@ img {
     width: 90px;
     height: 90px;
     margin-top: 51px;
+    margin-bottom: 7px;
 }
 button {
     border-radius: var(--border-radius);
