@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    user-select: none;
+    
+}
+
+:root {
+    --border-radius: 8px;
+    --input-bg-color: #444059;
+    --main-bg-color: #111827;
+    --text-headibg-cl: #FFFFFF;
+    --btn-bg-color: #28A9F1
+ 
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+} */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+}
+
+.wraper{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.container {
+  
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   
+   min-height: 400px;
+   width: 390px;
+   font-family: "Josefin Sans", sans-serif;
+
+
+
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 317px;
+    flex-wrap: wrap;
+
+    gap: 9px;
+    
+
+}
+p {
+    color : var(--text-headibg-cl);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 19px;
+    margin-bottom: 15px;
+    width: 160px;
+    height: 20px
+
+}
+p:has(label) {
+    width: 272px;
+    height: 25px;
+    
+    font-size: 25px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+
+}
+
+textarea { 
+    width: 317px;
+    border-radius: var(--border-radius);
+    background-color: var(--input-bg-color);
+    padding: 12px 16px 13px 19px;
+    
+}
+.users {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 317px;
+    
+
+}
+
+input { 
+    width: 152.85px;
+    height: 40px;
+    border-radius: var(--border-radius);
+    background-color: var(--input-bg-color);
+    text-align: center;
+}  
+
+:is(textarea, input),
+:is(textarea, input):hover,
+:is(textarea, input):focus {
+    border-style: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+img {
+    width: 90px;
+    height: 90px;
+    margin-top: 51px;
+}
+button {
+    border-radius: var(--border-radius);
+    width: 317px;
+    height: 61px;
+    background-color: var(--btn-bg-color);
+    color: #04131C;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.endorsements {
+    width: 319px;
+    padding: 13px 17px 11px 14px;
+
+   
+}
